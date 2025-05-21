@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - Happy Paws</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      background-image: url('pet_image');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      font-family: Arial, sans-serif;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    section, header, footer {
+      background-color: rgba(255, 255, 255, 0.85);
+      margin: 10px auto;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 1200px;
+    }
+
+    form {
+      display: grid;
+      gap: 15px;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    input, textarea, select {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    button {
+      background-color: #ff8c42;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #ff7518;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>📞 Contact Us</h1>
+    <nav>
+      <ul>
+        <li><a href="index_1.html">Home</a></li>
+        <li><a href="pets_page.html">Available Pets</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="registation_page.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Buy or Sell a Pet</h2>
+    <p>If you're looking to adopt, or you need to find a new home for a pet, fill out the form below and we’ll get in touch!</p>
+    <form action="#" method="post">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" />
+
+      <label for="type">I want to:</label>
+      <select id="type" name="type" required>
+        <option value="">-- Select --</option>
+        <option value="buy">Buy a Pet</option>
+        <option value="sell">Sell a Pet</option>
+      </select>
+
+      <label for="message">Additional Information:</label>
+      <textarea id="message" name="message" rows="4" placeholder="Tell us more..."></textarea>
+
+      <button type="submit">Submit Request</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Happy Paws. All rights reserved.</p>
+  </footer>
+</body>
+</html>
